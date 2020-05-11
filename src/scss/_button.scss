@@ -1,0 +1,60 @@
+.button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FF3E79;
+  border: none;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+&:hover {
+  opacity: 0.5;
+  transition: .5s ease-in-out;
+}
+&--menu {
+  background-image: url('../img/icon1.svg');
+}
+&--call {
+  background-image: url('../img/icon6.svg');
+}
+&--chat {
+  background-image: url('../img/icon5.svg');
+}
+&--profile {
+  background-image: url('../img/icon4.svg');
+}
+&--repair {
+  background-image: url('../img/icon2.svg');
+}
+&--status {
+  background-image: url('../img/icon3.svg');
+}
+&--close {
+  background-image: url('../img/icon8.svg');
+}
+&--find {
+  background-image: url('../img/icon7.svg');
+}
+&--outer {
+  position: absolute;
+}
+
+
+&--submit {
+font-size: 12px;
+line-height: 24px;
+text-align: right;
+letter-spacing: -0.15px;
+text-transform: uppercase;
+color: #FFFFFF;
+font-weight: 500;
+padding: 4px 40px  4px 12px;
+border-radius: 16px;
+text-align: left;
+width: unset;
+height: unset;
+background-image: url('../img/dropdown-white.svg');
+background-position-x: 85%;
+}
+}

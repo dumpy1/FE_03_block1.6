@@ -1,0 +1,145 @@
+.price {
+  padding-bottom: 47px;
+  &__text {
+    font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+padding-right: 10px;
+max-width: 430px;
+  }
+}
+
+
+.price-header {
+  display: none;
+
+  @media(min-width: 767px) {
+    display: flex;
+    padding-top: 15px;
+    padding-left: 32px;
+    padding-right: 140px;
+    margin-bottom: 16px;
+
+    &__item {
+      margin-right: auto;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 500;
+      text-align: left;
+      color: #7E7E82;
+      mix-blend-mode: normal;
+      opacity: 0.72;
+    }
+  }
+}
+
+.price__slider {
+  @media (min-width: 767px) {
+    background: #fff;
+    padding: 0 16px;
+    border-radius: 6px;
+  }
+}
+
+.price-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+  height: 200px;
+  padding: 36px 16px 16px;
+  border-radius: 6px;
+  background: #fff;
+  margin-bottom: 16px;
+
+  @media (min-width: 767px) {
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: auto;
+    height: 64px;
+    padding: 0;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 120px;
+    border-radius: 0;
+    border-bottom: 1px solid #EAEAEA;
+  }
+
+  &__text {
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+margin-right: auto;
+    text-align: left;
+
+    &--type {
+      @media (min-width: 767px) {
+        flex-basis: 350px;
+
+      }
+
+
+    }
+&--cost {
+        @media (min-width: 767px) {
+          flex-basis: 80px;
+
+        }
+      }
+
+      &--period {
+        @media (min-width: 767px) {
+          flex-basis: 85px;
+margin-right: auto;
+        }
+      }
+
+&::before {
+  display: block;
+      width: 130px;
+      top: -16px;
+      left: 0;
+      position: absolute;
+      font-size: 14px;
+line-height: 16px;
+color: #7E7E82;
+mix-blend-mode: normal;
+opacity: 0.72;
+
+}
+
+    &--type::before {
+      content : "Ремонтные услуги";
+      @media (min-width: 767px) {
+        display: none;
+      }
+    }
+
+    &--cost::before {
+      content : "Цена";
+      @media (min-width: 767px) {
+        display: none;
+      }
+    }
+
+    &--period::before {
+      content : "Срок";
+      @media (min-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  .button--submit {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    @media (min-width: 767px) {
+      right: 0;
+    }
+  }
+}
+
