@@ -71,7 +71,7 @@
   <section class="brands main__container">
     <h2 class="section-title ">Ремонт техники различных брендов</h2>
       <div class="swiper-container">
-        <div class="brands__slider slider ">
+        <div class="brands__slider slider hidden-area">
           <div class="slider-item slider-item--lenovo"><a class="slider-link" href="#">Lenovo</a>
           </div>
           <div class="slider-item slider-item--samsung "><a class="slider-link" href="#">Samsung</a>
@@ -90,14 +90,14 @@
           <div class="slider-item slider-item--apple "><a class="slider-link" href="#">Apple</a>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+
       </div>
       <label class="read-more  show-toggle">Показать все</label>
   </section>
   <section class="technics main__container">
     <h2 class="section-title">Ремонт различных видов техники</h2>
-    <div class="">
-      <div class="technics__slider slider">
+    <div class="swiper-container">
+      <div class="technics__slider hidden-area">
         <div class="technics-item ">Ремонт ноутбуков
           <a href="" class="slider-link"></a>
         </div>
@@ -114,54 +114,56 @@
                 <a href="" class="slider-link"></a>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+
           </div>
           <label class="read-more show-toggle">Показать все</label>
   </section>
   <section class="price main__container">
     <h2 class="section-title">цены на услуги</h2>
-<div class="">
+
   <div class="price-header">
     <span class="price-header__item price-item__text--type">Ремонтные услуги</span>
       <span class="price-header__item price-item__text--cost">Цена</span>
       <span class="price-header__item price-item__text--period">Срок</span>
   </div>
+  <div class="swiper-container">
   <div class="price__slider ">
-    <div class="price-item">
+    <div class="price-item ">
       <span class="price-item__text price-item__text--type">Диагностика</span>
       <span class="price-item__text price-item__text--cost">Бесплатно</span>
       <span class="price-item__text price-item__text--period">30 мин</span>
       <button class="button button--submit">Заказать</button>
     </div>
-    <div class="price-item">
+    <div class="price-item ">
       <span class="price-item__text price-item__text--type">Замена дисплея</span>
       <span class="price-item__text price-item__text--cost">1 000 ₽</span>
       <span class="price-item__text price-item__text--period">30-120 мин</span>
       <button class="button button--submit">Заказать</button>
     </div>
-    <div class="price-item">
+    <div class="price-item ">
       <span class="price-item__text price-item__text--type">Замена полифонического динамика</span>
       <span class="price-item__text price-item__text--cost">1 000 ₽</span>
       <span class="price-item__text price-item__text--period">30-120 мин</span>
       <button class="button button--submit">Заказать</button>
     </div>
-    <div class="price-item">
+    <div class="price-item ">
       <span class="price-item__text price-item__text--type">Тестирование с выдачей технического заключения</span>
       <span class="price-item__text price-item__text--cost">1 000 ₽</span>
       <span class="price-item__text price-item__text--period">30-120 мин</span>
       <button class="button button--submit">Заказать</button>
     </div>
-    <div class="price-item">
+    <div class="price-item ">
       <span class="price-item__text price-item__text--type">Замена программного обеспечения</span>
       <span class="price-item__text price-item__text--cost">1 000 ₽</span>
       <span class="price-item__text price-item__text--period">30-120 мин</span>
       <button class="button button--submit">Заказать</button>
     </div>
   </div>
+</div>
   <p class="price__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения
     коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
   <a href="#" class="kp-link">Получить коммерческое предложение</a>
-</div>
+
   </section>
   <section class="side-bar">
     <div class="side-bar__header header">
@@ -230,13 +232,14 @@
 
 </section>
 <section class="modal callback">
+  <button class="button button--close">закрыть</button>
   <h2 class="modal-title">Заказать звонок</h2>
   <form action="" class="modal-form">
     <input class="modal-input"type="phone" name="phone" id="phone" placeholder="Телефон">
     <p class="modal-text">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal-link">обработку персональных данных</a>  и соглашаетесь с нашей  <a href="#" class="modal-link">политикой конфиденциальности</a> </p>
     <button class="button button--submit" type="submit">ОТПРАВИТЬ</button>
   </form>
-  <button class="button button--close">закрыть</button>
+
 </section>
 <div class="modal-overlay"></div>
 </body>

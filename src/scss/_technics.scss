@@ -1,14 +1,15 @@
 .technics {
   padding-bottom: 32px;
 
-  .swiper-container {
-    height: 200px;
-  }
+
 
 &__slider {
   @media(min-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
     padding: 12px;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
+
     height: 185px;
   }
 }

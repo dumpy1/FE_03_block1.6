@@ -48,12 +48,13 @@ html {
   font-weight: normal;
   color: $text;
 margin: 0 auto;
-@media (min-width: 1200px) {
-  padding-left: 320px;
-}
+
   &__container {
     padding: 16px;
 
+  }
+  .side-bar--visible {
+    display: flex;
   }
 }
 
@@ -64,6 +65,9 @@ margin: 0 auto;
 }
 
 .main {position: relative;
+  @media (min-width: 1200px) {
+    padding-left: 320px;
+  }
   &__container {
     border-bottom: 1px solid #D9FFF5;
     @media (min-width: 1120px) {
