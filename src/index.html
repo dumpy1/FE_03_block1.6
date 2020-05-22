@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -132,31 +132,31 @@
       <span class="price-item__text price-item__text--type">Диагностика</span>
       <span class="price-item__text price-item__text--cost">Бесплатно</span>
       <span class="price-item__text price-item__text--period">30 мин</span>
-      <button class="button button--submit">Заказать</button>
+      <button class="button button-submit">Заказать</button>
     </div>
     <div class="price-item ">
       <span class="price-item__text price-item__text--type">Замена дисплея</span>
       <span class="price-item__text price-item__text--cost">1 000 ₽</span>
       <span class="price-item__text price-item__text--period">30-120 мин</span>
-      <button class="button button--submit">Заказать</button>
+      <button class="button button-submit">Заказать</button>
     </div>
     <div class="price-item ">
       <span class="price-item__text price-item__text--type">Замена полифонического динамика</span>
       <span class="price-item__text price-item__text--cost">1 000 ₽</span>
       <span class="price-item__text price-item__text--period">30-120 мин</span>
-      <button class="button button--submit">Заказать</button>
+      <button class="button button-submit">Заказать</button>
     </div>
     <div class="price-item ">
       <span class="price-item__text price-item__text--type">Тестирование с выдачей технического заключения</span>
       <span class="price-item__text price-item__text--cost">1 000 ₽</span>
       <span class="price-item__text price-item__text--period">30-120 мин</span>
-      <button class="button button--submit">Заказать</button>
+      <button class="button button-submit">Заказать</button>
     </div>
     <div class="price-item ">
       <span class="price-item__text price-item__text--type">Замена программного обеспечения</span>
       <span class="price-item__text price-item__text--cost">1 000 ₽</span>
       <span class="price-item__text price-item__text--period">30-120 мин</span>
-      <button class="button button--submit">Заказать</button>
+      <button class="button button-submit">Заказать</button>
     </div>
   </div>
 </div>
@@ -169,7 +169,7 @@
     <div class="side-bar__header header">
       <button class="button button--close"></button>
       <div class="header__logo logo">
-        <img class="img" src="../img/logo.svg" alt="CPS" width="97" height="51">
+        <img class="img" src="./img/logo.svg" alt="CPS" width="97" height="51">
       </div>
       <button class="button button--find"></button>
     </div>
@@ -201,7 +201,7 @@
         <a href="#" class="language__link side-bar__link">Ch</a>
       </div>
     </div>
-
+    <div class="side-bar-overlay"></div>
 
   </section>
 </main>
@@ -220,16 +220,16 @@
 
 <section class="modal feedback">
   <button class="button button--close">закрыть</button>
-  <h2 class="modal-title title">Обратная связь</h2>
+  <h2 class="modal-title">Обратная связь</h2>
   <form class="modal-form" action="#" method="POST">
     <input class="modal-input" type="text" name="name" id="name" placeholder="Имя">
     <input class="modal-input"type="phone" name="phone" id="phone" placeholder="Телефон">
     <input class="modal-input" type="email" name="email" id="email" placeholder="Электронная почта">
     <textarea class="modal-input" name="message" id="message"  rows="5" placeholder="Сообщение"></textarea>
     <p class="modal-text">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal-link">обработку персональных данных</a>  и соглашаетесь с нашей  <a href="#" class="modal-link">политикой конфиденциальности</a> </p>
-    <button class="button button--submit" type="submit">ОТПРАВИТЬ</button>
+    <button class="button button-submit" type="submit">ОТПРАВИТЬ</button>
   </form>
-
+  <div class="modal-overlay"></div>
 </section>
 <section class="modal callback">
   <button class="button button--close">закрыть</button>
@@ -237,10 +237,10 @@
   <form action="" class="modal-form">
     <input class="modal-input"type="phone" name="phone" id="phone" placeholder="Телефон">
     <p class="modal-text">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal-link">обработку персональных данных</a>  и соглашаетесь с нашей  <a href="#" class="modal-link">политикой конфиденциальности</a> </p>
-    <button class="button button--submit" type="submit">ОТПРАВИТЬ</button>
+    <button class="button button-submit" type="submit">ОТПРАВИТЬ</button>
   </form>
-
+  <div class="modal-overlay"></div>
 </section>
-<div class="modal-overlay"></div>
+
 </body>
 </html>

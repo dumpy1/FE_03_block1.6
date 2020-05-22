@@ -1,4 +1,7 @@
 import Swiper from 'swiper';
+import {Pagination} from 'swiper/js/swiper.esm.js';
+Swiper.use([Pagination]);
+
 'use strict';
 let mySwiper;
 const breakpoint = window.matchMedia('(min-width: 767px)');
@@ -94,7 +97,7 @@ for (let i = 0; i < hiddenItem.length; i++) {
 let burger = document.querySelector('.button--menu');
 let sideMenu = document.querySelector('.side-bar');
 let sideMenuClose = sideMenu.querySelector('.button--close');
-let warFog = document.querySelector('.modal-overlay');
+let warFog = document.querySelector('.side-bar-overlay');
 let modal = document.querySelectorAll('.modal');
 console.log('modal: ', modal);
 
@@ -111,7 +114,7 @@ let feedback = document.querySelector('.feedback');
 burger.addEventListener('click', () => {
   event.preventDefault();
   sideMenu.classList.add('side-bar--visible');
-  warFog.classList.add('side-bar--visible');
+
 });
 sideMenuClose.addEventListener('click', () => {
   event.preventDefault();
@@ -122,13 +125,13 @@ for(let i =0; i < callButton.length; i++) {
 callButton[i].addEventListener('click', () => {
   event.preventDefault();
   callback.classList.add('modal--visible');
-  warFog.classList.add('side-bar--visible');
+
 });}
 for(let i =0; i < chatButton.length; i++) {
 chatButton[i].addEventListener('click', () => {
   event.preventDefault();
   feedback.classList.add('modal--visible');
-  warFog.classList.add('side-bar--visible');
+
 });}
 
 for(let i =0; i < modal.length; i++) {
@@ -136,7 +139,7 @@ for(let i =0; i < modal.length; i++) {
   modalClose.addEventListener('click', () => {
     event.preventDefault();
   modal[i].classList.remove('modal--visible');
-  warFog.classList.remove('side-bar--visible');
+
   })
 
 }
