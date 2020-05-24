@@ -97,7 +97,7 @@ for (let i = 0; i < hiddenItem.length; i++) {
 let burger = document.querySelector('.button--menu');
 let sideMenu = document.querySelector('.side-bar');
 let sideMenuClose = sideMenu.querySelector('.button--close');
-let warFog = document.querySelector('.side-bar-overlay');
+
 let modal = document.querySelectorAll('.modal');
 console.log('modal: ', modal);
 
