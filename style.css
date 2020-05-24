@@ -136,7 +136,6 @@ html {
 
 .body {
   min-width: 320px;
-  max-width: 1440px;
   background: #F8F8F8;
   color: #1B1C21;
   font-family: 'TT Lakes', Arial, sans-serif;
@@ -146,6 +145,10 @@ html {
   margin: 0 auto; }
   .body__container {
     padding: 16px; }
+    @media (min-width: 1200px) {
+      .body__container {
+        margin-left: 320px;
+        max-width: 1120px; } }
   .body .side-bar--visible {
     display: flex; }
 
@@ -155,9 +158,6 @@ html {
 
 .main {
   position: relative; }
-  @media (min-width: 1200px) {
-    .main {
-      padding-left: 336px; } }
   .main__container {
     border-bottom: 1px solid #D9FFF5; }
     @media (min-width: 1120px) {
@@ -358,7 +358,7 @@ html {
     background-image: url(./static/icon7.svg); }
   .button--outer {
     position: absolute; }
-  .button--submit {
+  .button-submit {
     font-size: 12px;
     line-height: 24px;
     text-align: right;
@@ -635,11 +635,22 @@ html {
   z-index: 20;
   overflow-y: scroll;
   transition: all 0.5s ease-in-out; }
+  @media (max-width: 1200px) {
+    .side-bar::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      mix-blend-mode: normal;
+      opacity: 0.90; } }
   @media (min-width: 1200px) {
     .side-bar {
       display: flex;
-      position: absolute;
-      left: -1px;
       overflow: hidden;
       box-shadow: none; } }
   .side-bar__container {
@@ -662,9 +673,11 @@ html {
     .side-bar .header .button--close {
       display: none; } }
   .side-bar__nav {
-    margin-bottom: auto;
     padding: 0 24px;
     flex: 0 0 auto; }
+    @media (min-width: 767px) {
+      .side-bar__nav {
+        margin-bottom: auto; } }
   .side-bar__list {
     list-style: none;
     padding: 0;
@@ -673,6 +686,9 @@ html {
   .side-bar__nav-item {
     position: relative;
     margin-bottom: 32px; }
+    @media (min-width: 767px) {
+      .side-bar__nav-item {
+        margin-bottom: 16px; } }
     .side-bar__nav-item--active::before {
       position: absolute;
       content: "";
@@ -688,6 +704,9 @@ html {
     padding: 0 24px;
     padding-bottom: 32px;
     margin-bottom: auto; }
+    @media (min-width: 767px) {
+      .side-bar__footer {
+        margin-bottom: 0; } }
   .side-bar__nav-link {
     text-decoration: none;
     color: inherit; }
@@ -872,12 +891,23 @@ html {
   top: 0;
   right: 0;
   z-index: 100; }
+  .modal::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.90; }
   .modal--visible {
     display: block; }
   @media (min-width: 767px) {
     .modal {
-      border-left: 1px solid #D9FFF5;
-      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2); } }
+      border-left: 1px solid #41F6D7;
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -20px 0px 4px rgba(69, 79, 126, 0.02); } }
   .modal .button--submit {
     margin-left: auto; }
   .modal .button--close {
@@ -892,7 +922,6 @@ html {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.6px;
-  margin-top: 80px;
   margin-bottom: 24px; }
   @media (min-width: 1400px) {
     .modal-title {
@@ -958,18 +987,6 @@ html {
 .modal-link {
   text-decoration: none;
   color: #FF3E79; }
-
-.modal-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9;
-  width: 100%;
-  height: 100%;
-  background: #FFFFFF;
-  mix-blend-mode: normal;
-  opacity: 0.96; }
 
 
 /*# sourceMappingURL=style.css.map*/
